@@ -10,14 +10,16 @@ const page1 = {
   details: {
     createAt: new Date('2021-01-01'),
     updateAt: new Date('2021-05-01'),
-  }
-}
+  },
+};
 
 const page2 = {
   title: 'Python or Js',
   likes: 5,
   accounts: ['Alex'],
   status: 'close',
-}
+};
+
+type CommonPage = typeof page1 & typeof page2;
 
 export {};
